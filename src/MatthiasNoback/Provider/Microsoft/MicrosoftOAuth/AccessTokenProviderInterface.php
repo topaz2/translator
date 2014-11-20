@@ -1,6 +1,6 @@
 <?php
 
-namespace MatthiasNoback\MicrosoftOAuth;
+namespace MatthiasNoback\Provider\Microsoft\MicrosoftOAuth;
 
 interface AccessTokenProviderInterface
 {

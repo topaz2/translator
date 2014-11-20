@@ -1,10 +1,13 @@
 <?php
 
-namespace MatthiasNoback\MicrosoftTranslator;
+namespace MatthiasNoback\Provider\Microsoft;
 
-use MatthiasNoback\MicrosoftOAuth\AccessTokenProviderInterface;
-use MatthiasNoback\MicrosoftTranslator\ApiCall;
+use MatthiasNoback\Provider\Microsoft\MicrosoftOAuth\AccessTokenProviderInterface;
+use MatthiasNoback\Provider\Microsoft\ApiCall;
 use MatthiasNoback\Exception\RequestFailedException;
+use MatthiasNoback\Provider\Microsoft\MicrosoftOAuth\AccessTokenProvider;
+use MatthiasNoback\Provider\Microsoft\MicrosoftTranslator;
+use MatthiasNoback\Provider\Microsoft\ApiCall\Translate;
 use Buzz\Browser;
 
 class MicrosoftTranslator
@@ -18,7 +21,7 @@ class MicrosoftTranslator
     private $browser;
 
     /**
-     * @var \MatthiasNoback\MicrosoftOAuth\AccessTokenProviderInterface
+     * @var \MatthiasNoback\Provider\Microsoft\MicrosoftOAuth\AccessTokenProviderInterface
      */
     private $accessTokenProvider;
 
@@ -76,7 +79,7 @@ class MicrosoftTranslator
      * @param string $to
      * @param string|null $from
      * @param int|null $maxTranslations
-     * @return \MatthiasNoback\MicrosoftTranslator\ApiCall\Response\TranslationMatch[]
+     * @return \MatthiasNoback\Provider\Microsoft\MicrosoftTranslator\ApiCall\Response\TranslationMatch[]
      */
     public function getTranslations($text, $to, $from = null, $maxTranslations = 4)
     {
@@ -184,7 +187,7 @@ class MicrosoftTranslator
     }
 
     /**
-     * @param \MatthiasNoback\MicrosoftTranslator\ApiCall\ApiCallInterface $apiCall
+     * @param \MatthiasNoback\Provider\Microsoft\MicrosoftTranslator\ApiCall\ApiCallInterface $apiCall
      * @return mixed
      */
     private function call(ApiCall\ApiCallInterface $apiCall)

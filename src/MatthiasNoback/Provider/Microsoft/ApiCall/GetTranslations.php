@@ -1,9 +1,9 @@
 <?php
 
-namespace MatthiasNoback\MicrosoftTranslator\ApiCall;
+namespace MatthiasNoback\Provider\Microsoft\ApiCall;
 
 use MatthiasNoback\Exception\InvalidResponseException;
-use MatthiasNoback\MicrosoftTranslator\ApiCall\Response\TranslationMatch;
+use MatthiasNoback\Provider\Microsoft\ApiCall\Response\TranslationMatch;
 
 class GetTranslations extends AbstractMicrosoftTranslatorApiCall
 {

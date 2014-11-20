@@ -1,6 +1,6 @@
 <?php
 
-namespace MatthiasNoback\MicrosoftTranslator\ApiCall\Response;
+namespace MatthiasNoback\Provider\Microsoft\ApiCall\Response;
 
 class TranslationMatch
 {

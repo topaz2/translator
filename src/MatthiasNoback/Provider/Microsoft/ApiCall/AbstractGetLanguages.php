@@ -1,6 +1,6 @@
 <?php
 
-namespace MatthiasNoback\MicrosoftTranslator\ApiCall;
+namespace MatthiasNoback\Provider\Microsoft\ApiCall;
 
 abstract class AbstractGetLanguages extends AbstractMicrosoftTranslatorApiCall
 {
