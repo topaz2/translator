@@ -1,5 +1,6 @@
 <?php
 
+
 namespace MatthiasNoback\Provider\Microsoft\MicrosoftOAuth;
 
 use Buzz\Browser;

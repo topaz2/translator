@@ -4,10 +4,10 @@ namespace MatthiasNoback\Tests\MicrosoftTranslator;
 
 use Buzz\Browser;
 use Buzz\Client\Curl;
-use MatthiasNoback\MicrosoftOAuth\AccessTokenProvider;
-use MatthiasNoback\MicrosoftTranslator\ApiCall\Response\TranslationMatch;
-use MatthiasNoback\MicrosoftTranslator\MicrosoftTranslator;
-use MatthiasNoback\MicrosoftOAuth\AccessTokenCache;
+use MatthiasNoback\Provider\Microsoft\MicrosoftOAuth\AccessTokenProvider;
+use MatthiasNoback\Provider\Microsoft\ApiCall\Response\TranslationMatch;
+use MatthiasNoback\Provider\Microsoft\MicrosoftTranslator;
+use MatthiasNoback\Provider\Microsoft\MicrosoftOAuth\AccessTokenCache;
 use Doctrine\Common\Cache\ArrayCache;
 use MatthiasNoback\Buzz\Client\CachedClient;
 

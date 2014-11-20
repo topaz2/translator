@@ -2,7 +2,7 @@
 
 namespace MatthiasNoback\Tests\MicrosoftOAuth;
 
-use MatthiasNoback\MicrosoftOAuth\AccessTokenProvider;
+use MatthiasNoback\Provider\Microsoft\MicrosoftOAuth\AccessTokenProvider;
 
 class AccessTokenProviderTest extends \PHPUnit_Framework_TestCase
 {
@@ -133,6 +133,6 @@ class AccessTokenProviderTest extends \PHPUnit_Framework_TestCase
 
     private function createMockAccessTokenCache()
     {
-        return $this->getMock('MatthiasNoback\MicrosoftOAuth\AccessTokenCacheInterface');
+        return $this->getMock('MatthiasNoback\Provider\Microsoft\MicrosoftOAuth\AccessTokenCacheInterface');
     }
 }

@@ -2,7 +2,7 @@
 
 namespace MatthiasNoback\Tests\MicrosoftOAuth;
 
-use MatthiasNoback\MicrosoftOAuth\AccessTokenCache;
+use MatthiasNoback\Provider\Microsoft\MicrosoftOAuth\AccessTokenCache;
 
 class AccessTokenCacheTest extends \PHPUnit_Framework_TestCase
 {

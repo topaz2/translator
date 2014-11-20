@@ -2,8 +2,8 @@
 
 namespace MatthiasNoback\Tests\MicrosoftTranslator\ApiCall;
 
-use MatthiasNoback\MicrosoftTranslator\ApiCall;
-use MatthiasNoback\MicrosoftTranslator\ApiCall\Response\TranslationMatch;
+use MatthiasNoback\Provider\Microsoft\ApiCall;
+use MatthiasNoback\Provider\Microsoft\ApiCall\Response\TranslationMatch;
 
 class GetTranslationsTest extends \PHPUnit_Framework_TestCase
 {

@@ -2,7 +2,7 @@
 
 namespace MatthiasNoback\Tests\MicrosoftTranslator\ApiCall;
 
-use MatthiasNoback\MicrosoftTranslator\ApiCall;
+use MatthiasNoback\Provider\Microsoft\ApiCall;
 
 class DetectTest extends \PHPUnit_Framework_TestCase
 {
