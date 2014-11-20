@@ -1,9 +1,9 @@
 {
-    "name": "matthiasnoback/microsoft-translator",
+    "name": "topaz2/translator",
     "type": "library",
     "description": "Library for making calls to the Microsoft Translator V2 API",
     "keywords": ["translate","Microsoft Translator", "Bing"],
-    "homepage": "http://github.com/matthiasnoback/microsoft-translator",
+    "homepage": "http://github.com/topaz2/translator",
     "license": "MIT",
     "authors": [
         {
