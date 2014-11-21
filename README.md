@@ -1,8 +1,14 @@
-# PHP library for the Microsoft Translator V2 API
+# PHP library for making calls to the API based translation services
 
 By Matthias Noback
 
 [![Build Status](https://travis-ci.org/matthiasnoback/microsoft-translator.png?branch=master)](https://travis-ci.org/matthiasnoback/microsoft-translator) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/matthiasnoback/microsoft-translator/badges/quality-score.png?s=a3230ce4a66715d3a62793da48ba24d8a30ab85d)](https://scrutinizer-ci.com/g/matthiasnoback/microsoft-translator/)
+
+## Supports
+
+* Microsoft
+  * [Microsoft Translator V2 API](http://msdn.microsoft.com/en-us/library/ff512419.aspx)
+* Google (yet implemented)
 
 ## Installation
 
@@ -20,27 +26,15 @@ Then using the Composer binary:
 
 ## Usage
 
-This library uses the Buzz browser to make calls to the [Microsoft Translator V2 API](http://msdn.microsoft.com/en-us/library/ff512419.aspx).
-
 You need to register your application at the [Azure DataMarket](https://datamarket.azure.com/developer/applications) and
-thereby retrieve a "client id" and a "client secret". These kan be used to instantiate the ``AccessTokenProvider`` on which
-the ``MicrosoftTranslator`` depends:
+thereby retrieve a "client id" and a "client secret".
 
 ```php
 <?php
 
-use Buzz\Browser;
-use MatthiasNoback\MicrosoftOAuth\AccessTokenProvider;
-use MatthiasNoback\MicrosoftTranslator\MicrosoftTranslator;
+use MatthiasNoback\Translator;
 
-$browser = new Browser();
-
-$clientId = '[YOUR-CLIENT-ID]';
-$clientSecret = '[YOUR-CLIENT-SECRET]';
-
-$accessTokenProvider = new AccessTokenProvider($browser, $clientId, $clientSecret);
-
-$translator = new MicrosoftTranslator($browser, $accessTokenProvider);
+$translator = new Translator('[YOUR-CLIENT-ID]', '[YOUR-CLIENT-SECRET]');
 ```
 
 ### Optional: enable the access token cache
