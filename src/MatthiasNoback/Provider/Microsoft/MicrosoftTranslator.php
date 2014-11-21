@@ -87,7 +87,7 @@ class MicrosoftTranslator
 
         return $this->call($apiCall);
     }
-    
+
     /**
      * Detects the language of a given text
      *
